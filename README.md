@@ -1,24 +1,41 @@
-# README
+# Mint Signup Form
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Usage of 
 
-Things you may want to cover:
+### Technology
 
-* Ruby version
+Ruby - Rails - ActiveRecord - PostgreSQL - SQLite 
 
-* System dependencies
+### Authors
 
-* Configuration
+- **Tiffany Arellano** - [@yirano](https://github.com/yirano)
+- **Tiago Ferreira** - [@ferreirati](https://github.com/ferreirati)
 
-* Database creation
+### Links
 
-* Database initialization
+- **Assignment page** - [The Odin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/building-with-active-record-ruby-on-rails)
+- **Live** - [Demo on Heroku](https://sleepy-caverns-46639.herokuapp.com/)
 
-* How to run the test suite
+### Database structure
+- users
+  - name: STR, required, max:80
+  - email: STR, required, index, unique, max:255
+  - password_digest: STR
 
-* Services (job queues, cache servers, search engines, etc.)
+- posts
+  - title: STR, required, max:255
+  - description: TEXT
+  - user_id
+  - belongs_to: user
+  - has_many: comments
 
-* Deployment instructions
+- comments
+  - text: STR, required, max:255
+  - user_id FK
+  - post_id FK 
+  - belongs_to: user
 
-* ...
+### Scaffolding commands
+- rails g scaffold User name:string email:string password_digest:string
+- rails g scaffold Post title:string description:text user:references
+- rails g scaffold Comment text:string user:references post:references
