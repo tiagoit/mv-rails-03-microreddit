@@ -1,8 +1,8 @@
 class Post < ApplicationRecord
   # validations
-  validate :title, presence: true, length: { maximum: 128 }
-  validate :description, length: { maximum: 255 }
-  validate :user_id, presence: true
+  validates :title, presence: true, length: { maximum: 128 }
+  validates :description, length: { maximum: 255 }
+  validates :user_id, presence: true
   validates_associated :comments
 
   # relations
