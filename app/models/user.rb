@@ -10,6 +10,7 @@ class User < ApplicationRecord
 
   # relations
   has_secure_password
+  has_many :post
 
   # callbacks
   before_save do
