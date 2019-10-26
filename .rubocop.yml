@@ -9,7 +9,7 @@ AllCops:
   DisplayCopNames: true
 
 Metrics/LineLength:
-  Max: 120
+  Max: 150
 Metrics/MethodLength:
   Include: ["app/controllers/*"]
   Max: 20
@@ -25,6 +25,14 @@ Style/Documentation:
   Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/StringLiterals:
+  Enabled: false
+Style/EmptyMethod:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false
 
 Layout/AlignHash:
   EnforcedColonStyle: key
@@ -33,3 +41,6 @@ Layout/ExtraSpacing:
 Layout/MultilineMethodCallIndentation:
   Enabled: true
   EnforcedStyle: indented
+
+Bundler/OrderedGems:
+  Enabled: false
