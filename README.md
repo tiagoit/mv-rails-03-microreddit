@@ -8,7 +8,7 @@ Ruby - Rails - ActiveRecord - PostgreSQL - SQLite
 
 ### Authors
 
-- **Tiffany Arellano** - [@yirano](https://github.com/yirano)
+- **Oscar De La Lanza** - [@oscardelalanza](https://github.com/oscardelalanza)
 - **Tiago Ferreira** - [@ferreirati](https://github.com/ferreirati)
 
 ### Links
