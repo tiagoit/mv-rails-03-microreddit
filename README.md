@@ -1,6 +1,6 @@
-# Mint Signup Form
+# Microreddit Rails app
 
-Usage of 
+This is a micro clone of [Reddit.com](https://reddit.com) app. It implements user authentication and features to create or comment on posts.
 
 ### Technology
 
